@@ -20,7 +20,10 @@ Para poder ejecutar el proyecto debe
 ```bash
     venv\Scripts\activate
 
+```
+```bash
     venv/Scripts/activate.ps1
+
 ```
 
 - Instalar los requerimientos del proyecto
