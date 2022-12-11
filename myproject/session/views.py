@@ -9,8 +9,11 @@ from .forms import ProyectoForm
 
 @login_required
 def home(request):
-    
-    return render(request,'session/index.html')
+    proyectos=Proyecto.objects.all()
+    context={
+        "proyectos":proyectos
+    }
+    return render(request,'session/index.html',context)
 
 class CreateProject(FormView):
     model = Proyecto
